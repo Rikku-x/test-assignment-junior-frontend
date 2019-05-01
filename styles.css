@@ -1,0 +1,182 @@
+@media (max-width: 900px) {
+  .wrapperInner {
+    flex-direction: column
+  }
+  .btn {
+    margin-bottom: 13px;
+  }
+}
+
+body {
+  background-color: #69a5e0;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 0 6rem rgba(0, 0, 0, 0.6);
+}
+
+.wrapperInner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.align {
+  flex: 1;
+}
+
+.block {
+  display: flex;
+  width: 250px;
+  padding: 20px;
+  flex-direction: column;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: Roboto, sans-serif;
+}
+
+.blockItem {
+  margin: 5px;
+}
+
+.descriptionText {
+  font-size: 10px;
+  color: gray;
+}
+
+.coloredText {
+  color: #5574d3;
+  font-weight: 700;
+  font-size: 12px;
+  display: flex;
+  align-items: baseline
+}
+
+.dollarSign {
+  align-self: flex-start;
+  margin-top: 3px
+}
+
+.price {
+  font-size: 20px;
+  padding-right: 5px;
+}
+
+.shadow {
+  background: rgba(102, 102, 102, 0.5);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+.modalMobile, .modalMonitor, .modalDesktop {
+  background-color: white;
+  display: none;
+  width: 250px;
+  height: 250px;
+  border-radius: 5px;
+  padding: 5px;
+  flex-direction: column;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: Roboto, sans-serif;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  z-index: 100;
+}
+
+.confirmationText {
+  font-size: 12px;
+  font-weight: 700;
+  color: black;
+  text-align: center;
+  font-family: Roboto, sans-serif;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+
+.btn {
+  background: blue;
+  border: blue-dark solid 1px;
+  border-radius: 3px;
+  color: white;
+  font-size: 14px;
+  padding: 3px 15px;
+  text-decoration: none;
+  text-align: center;
+  min-width: 100px;
+  font-family: Roboto, sans-serif;
+}
+
+.xClose {
+  margin-right: 4px;
+  margin-bottom: 16px;
+  font-size: 15px
+}
+
+a {
+  display: block;
+  position: relative;
+  text-decoration: none;
+}
+
+a:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, .3);
+  opacity: 0;
+}
+
+a:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+}
+
+a:hover:before, a:hover:after {
+  opacity: 0.3;
+}
+
+.btn-close {
+  color: gray-light;
+  font-size: 30px;
+  text-decoration: none;
+  position: absolute;
+  right: 5px;
+  top: 0;
+}

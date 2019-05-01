@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Loop 1 - Step 1</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,500,700"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <script type="text/javascript" src="app.js"></script>
+  </head>
+  <body>
+    <div class="shadow" onclick="hideModal()">
+      <div class="modalMobile">
+        <div class="confirmationText blockItem">
+          <div></div>
+          <div>
+            Confirmation
+          </div>
+          <div class="xClose">
+            <a href="#" onclick="hideModal()">x</a>
+          </div>
+        </div>
+        <div class="blockItem">
+          <img src="img/device.svg" alt="device" width="50" height="50" />
+        </div>
+        <div class="coloredText blockItem">MOBILE</div>
+        <div class="descriptionText blockItem">
+          Get notifications about new releases in our mobile app.
+        </div>
+        <div class="coloredText blockItem">
+          <div class="dollarSign">$</div>
+          <div class="price">10</div>
+          <div>/ month</div>
+        </div>
+        <div class="blockItem">
+          <a href="#" class="btn blockItem">Confirm and pay</a>
+        </div>
+      </div>
+      <div class="modalDesktop">
+        <div class="confirmationText blockItem">
+          <div></div>
+          <div>
+            Confirmation
+          </div>
+          <div class="xClose">
+            <a href="#" onclick="hideModal()">x</a>
+          </div>
+        </div>
+        <div class="blockItem">
+          <img src="img/laptop.svg" alt="device" width="50" height="50" />
+        </div>
+        <div class="coloredText blockItem">DESKTOP</div>
+        <div class="descriptionText blockItem">
+          Enjoy new episodes on your laptop in browser with our web service,
+          which supports all the platforms.
+        </div>
+        <div class="coloredText blockItem">
+          <div class="dollarSign">$</div>
+          <div class="price">15</div>
+          <div>/ month</div>
+        </div>
+        <div class="blockItem">
+          <a href="#" class="btn blockItem">Confirm and pay</a>
+        </div>
+      </div>
+      <div class="modalMonitor">
+        <div class="confirmationText blockItem">
+          <div></div>
+          <div>
+            Confirmation
+          </div>
+          <div class="xClose">
+            <a href="#" onclick="hideModal()">x</a>
+          </div>
+        </div>
+        <div class="blockItem">
+          <img src="img/monitor.svg" alt="device" width="50" height="50" />
+        </div>
+        <div class="coloredText blockItem">TV</div>
+        <div class="descriptionText blockItem">
+          Watch your favorite series at home on large screeen with our TV
+          application
+        </div>
+        <div class="coloredText blockItem">
+          <div class="dollarSign">$</div>
+          <div class="price">20</div>
+          <div>/ month</div>
+        </div>
+        <div class="blockItem">
+          <a href="#" class="btn blockItem">Confirm and pay</a>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="align"></div>
+      <div class=" wrapper align">
+        <div class="wrapperInner">
+          <a
+            href="#modalMobile"
+            class="blockItem"
+            onclick="showModal('.modalMobile');"
+          >
+            <div class="block">
+              <div class="blockItem">
+                <img src="img/device.svg" alt="device" width="50" height="50" />
+              </div>
+              <div class="coloredText blockItem">MOBILE</div>
+              <div class="descriptionText blockItem">
+                Get notifications about new releases in our mobile app.
+              </div>
+              <div class="coloredText blockItem">
+                <div class="dollarSign">$</div>
+                <div class="price">10</div>
+                <div>/ month</div>
+              </div>
+            </div>
+          </a>
+          <a
+            href="#modalDesktop"
+            class="blockItem"
+            onclick="showModal('.modalDesktop');"
+          >
+            <div class="block">
+              <div class="blockItem">
+                <img src="img/laptop.svg" alt="laptop" width="50" height="50" />
+              </div>
+              <div class="coloredText blockItem">DESKTOP</div>
+              <div class="descriptionText blockItem">
+                Enjoy new episodes on your laptop in browser with our web
+                service, which supports all the platforms.
+              </div>
+              <div class="coloredText blockItem">
+                <div class="dollarSign">$</div>
+                <div class="price">15</div>
+                <div>/ month</div>
+              </div>
+            </div>
+          </a>
+          <a
+            href="#modalMonitor"
+            class="blockItem"
+            onclick="showModal('.modalMonitor');"
+          >
+            <div class="block">
+              <div class="blockItem">
+                <img
+                  src="img/monitor.svg"
+                  alt="monitor"
+                  width="50"
+                  height="50"
+                />
+              </div>
+              <div class="coloredText blockItem">TV</div>
+              <div class="descriptionText blockItem">
+                Watch your favorite series at home on large screeen with our TV
+                application.
+              </div>
+              <div class="coloredText blockItem">
+                <div class="dollarSign">$</div>
+                <div class="price">20</div>
+                <div>/ month</div>
+              </div>
+            </div></a
+          >
+        </div>
+        <div><a href="" class="btn">Give feedback</a></div>
+      </div>
+      <div class="align"></div>
+    </div>
+  </body>
+</html>
